@@ -99,7 +99,7 @@ Pour relancer le projet, il faudrait fournir sa propre base Oracle (ou adapter l
 
 ## Équipe
 
-Projet réalisé par le groupe 4 (BUT Informatique, 2ème année) : **Mathéo Rimbault** et les autres membres du groupe (à compléter).
+Ce projet a été réalisé par le groupe 4, composé de 8 étudiants en deuxième année de BUT Informatique.
 
 ## Remarques
 
