@@ -1,0 +1,350 @@
+/* ===== admin_lignes.css ===== */
+
+/* ── Structure ── */
+.top-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.top-actions h1 {
+    flex: 1;
+    margin: 0;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #8D9195;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.back-link:hover { color: #fff; }
+
+.admin-section {
+    background: #242424;
+    border-radius: 10px;
+    border: 1px solid #333;
+    border-left: 4px solid #D81F2C;
+    padding: 28px 24px;
+    margin-bottom: 24px;
+}
+
+.section-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #D81F2C;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-left: 3px solid #D81F2C;
+    padding-left: 10px;
+    margin-bottom: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.section-desc {
+    font-size: 13px;
+    color: #8D9195;
+    margin-bottom: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.section-desc strong {
+    color: #D81F2C;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 48px 0;
+    color: #555;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+/* ── Feedback ── */
+.feedback {
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.feedback.success { background: #0d2e1a; border: 1px solid #16a34a; color: #4ade80; }
+.feedback.error   { background: #2e0d0d; border: 1px solid #D81F2C; color: #f87171; }
+.feedback.info    { background: #0d1e2e; border: 1px solid #3b82f6; color: #93c5fd; }
+
+/* ── Sélecteur de ligne ── */
+.ligne-selector {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.ligne-selector label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #8D9195;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-family: Arial, sans-serif;
+}
+
+.ligne-selector select {
+    padding: 9px 14px;
+    border-radius: 6px;
+    border: 1.5px solid #3a3a3a;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 14px;
+    min-width: 220px;
+    font-family: Arial, sans-serif;
+}
+
+.ligne-selector select:focus { border-color: #D81F2C; outline: none; }
+
+/* ── Boutons ── */
+.btn-charger {
+    padding: 9px 20px;
+    background: #D81F2C;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: opacity 0.2s;
+}
+
+.btn-charger:hover { opacity: 0.85; }
+
+.btn-save {
+    margin-top: 24px;
+    padding: 11px 32px;
+    background: #D81F2C;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+    transition: opacity 0.2s;
+}
+
+.btn-save:hover { opacity: 0.85; }
+
+.btn-logs {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 18px;
+    background: #2a2a2a;
+    color: #8D9195;
+    border: 1.5px solid #3a3a3a;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-logs:hover { border-color: #D81F2C; color: #fff; }
+
+.btn-annuler {
+    padding: 5px 12px;
+    background: none;
+    border: 1.5px solid #D81F2C;
+    color: #D81F2C;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.18s;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+}
+
+.btn-annuler:hover { background: #D81F2C; color: #fff; }
+
+/* ── Tableau édition arrêts ── */
+.edit-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.edit-table thead { background: #343330; }
+
+.edit-table thead th {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    color: #8D9195;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.edit-table tbody tr {
+    border-top: 1px solid #3a3a3a;
+    transition: background 0.2s;
+}
+
+.edit-table tbody tr:hover { background: #333; }
+
+.edit-table tbody td {
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #B5B8BA;
+    vertical-align: middle;
+}
+
+.edit-table tbody td:first-child { font-weight: 700; color: #fff; }
+
+.edit-table input[type="time"],
+.edit-table input[type="number"] {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1.5px solid #3a3a3a;
+    background: #1e1e1e;
+    color: #fff;
+    font-size: 14px;
+    width: 110px;
+    font-family: Arial, sans-serif;
+}
+
+.edit-table input[type="number"] { width: 90px; }
+.edit-table input:focus { border-color: #D81F2C; outline: none; }
+
+.arrow-cell { color: #D81F2C; font-size: 18px; text-align: center; width: 30px; }
+
+.no-next { color: #555; font-style: italic; font-size: 12px; }
+
+.badge-terminal {
+    display: inline-block;
+    background: #1a1a1a;
+    border: 1px solid #555;
+    color: #8D9195;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 6px;
+}
+
+/* ── Tableau logs ── */
+.log-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+}
+
+.log-table thead { background: #343330; }
+
+.log-table thead th {
+    padding: 11px 14px;
+    text-align: left;
+    font-size: 10px;
+    font-weight: 700;
+    color: #8D9195;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.log-table tbody tr {
+    border-top: 1px solid #3a3a3a;
+    transition: background 0.15s;
+}
+
+.log-table tbody tr:hover { background: #2f2f2f; }
+
+.log-table tbody td {
+    padding: 10px 14px;
+    color: #B5B8BA;
+    vertical-align: middle;
+}
+
+.val-avant  { color: #f87171; font-family: monospace; }
+.val-apres  { color: #4ade80; font-family: monospace; }
+.col-id     { color: #555; font-size: 11px; }
+.col-date   { white-space: nowrap; }
+.col-insee  { font-family: monospace; font-size: 12px; }
+.col-insee-arrow { color: #555; }
+.col-admin  { font-size: 12px; color: #8D9195; }
+
+.champ-badge {
+    display: inline-block;
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    color: #D81F2C;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.ligne-badge {
+    display: inline-block;
+    background: #D81F2C;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+/* ── Filtres logs ── */
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    font-family: Arial, sans-serif;
+}
+
+.filters label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #8D9195;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.filters select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1.5px solid #3a3a3a;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+}
+
+.filters select:focus { border-color: #D81F2C; outline: none; }

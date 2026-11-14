@@ -1,0 +1,115 @@
+/* ===== admin.css ===== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 32px;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== TITRE ===== */
+main h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+main h1::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 26px;
+    background: #D81F2C;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+/* ===== GRILLE DEUX CARTES ===== */
+.admin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 48px;
+}
+
+/* ===== CARTE ===== */
+.admin-card {
+    background: #242424;
+    border-radius: 10px;
+    border: 1px solid #333;
+    border-left: 4px solid #D81F2C;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.admin-card:hover {
+    background: #2a2a2a;
+    border-color: #D81F2C;
+}
+
+.admin-card-icon {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.admin-card-content h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 8px;
+}
+
+.admin-card-content p {
+    font-size: 13px;
+    color: #8D9195;
+    line-height: 1.6;
+}
+
+/* ===== BOUTON ===== */
+.bouton_admin {
+    background: #D81F2C;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background 0.2s;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+.bouton_admin:hover {
+    background: #921520;
+}
+
+/* ===== IMAGE BUS ===== */
+.center {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    opacity: 0.85;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    main {
+        padding: 24px 16px;
+    }
+
+    .admin-grid {
+        grid-template-columns: 1fr;
+    }
+}

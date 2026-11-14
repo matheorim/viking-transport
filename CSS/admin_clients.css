@@ -1,0 +1,59 @@
+.user-controls {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.search-bar,
+.filter-select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1.5px solid #7c0000;
+    background: #2a2a2a;
+    color: #B5B8BA;
+    font-family: sans-serif;
+}
+
+.user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.user-card {
+    background: #2a2a2a;
+    border: 1.5px solid #7c0000;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #B5B8BA;
+    font-family: sans-serif;
+    position: relative;
+    transition: 0.2s;
+}
+
+.user-card:hover {
+    border-color: #D81F2C;
+    transform: translateY(-2px);
+}
+
+.user-card h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.user-body p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.badge-inactive {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #921520;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}

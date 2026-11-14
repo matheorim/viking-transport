@@ -1,0 +1,173 @@
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 32px;
+    font-family: Arial, sans-serif;
+}
+
+main h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 32px;
+}
+
+/* GRILLE : 2 tableaux en haut côte à côte */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+/* Tableau du bas centré */
+.stat-section-bottom {
+    max-width: 700px;
+    margin: 0 auto 48px;
+}
+
+.stat-section {
+    margin-bottom: 0;
+}
+
+.stat-section h2 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #D81F2C;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    border-left: 3px solid #D81F2C;
+    padding-left: 10px;
+    margin-bottom: 16px;
+}
+
+.stat-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.stat-table thead {
+    background: #343330;
+}
+
+.stat-table thead th {
+    padding: 12px 18px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    color: #8D9195;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.stat-table tbody tr {
+    border-top: 1px solid #3a3a3a;
+    transition: background 0.2s;
+}
+
+.stat-table tbody tr:hover {
+    background: #333;
+}
+
+.stat-table tbody td {
+    padding: 12px 18px;
+    font-size: 14px;
+    color: #B5B8BA;
+}
+
+.stat-table tbody td:first-child {
+    font-weight: 700;
+    color: #fff;
+}
+
+.highlight {
+    color: #D81F2C !important;
+    font-weight: 700;
+}
+
+.periode-nav {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.periode-nav a {
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #8D9195;
+    border: 1px solid #3a3a3a;
+    transition: all 0.2s;
+}
+
+.periode-nav a:hover,
+.periode-nav a.active {
+    background: #D81F2C;
+    color: #fff;
+    border-color: #D81F2C;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    .stat-section-bottom {
+        max-width: 100%;
+    }
+}
+
+/* Aligner les hauteurs des deux tableaux du haut */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 48px;
+    align-items: start;
+}
+
+.stats-grid .stat-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.stats-grid .stat-section .stat-table {
+    flex: 1;
+}
+
+/* Étirer les lignes du tableau de droite pour qu'il prenne toute la hauteur */
+.stats-grid .stat-section:last-child .stat-table tbody tr {
+    height: 52px;
+}
+
+/* Élargir le tableau du bas */
+.stat-section-bottom {
+    max-width: 100%;
+    margin: 0 auto 48px;
+}
+
+.stat-table thead th {
+    padding: 12px 18px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    color: #8D9195;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    white-space: nowrap;  /* empêche le wrap des titres */
+}
+
+.stats-grid .stat-section:first-child .stat-table {
+    font-size: 13px;
+}
+
+.stats-grid .stat-section:first-child .stat-table thead th,
+.stats-grid .stat-section:first-child .stat-table tbody td {
+    padding: 10px 10px;
+}

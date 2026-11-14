@@ -1,0 +1,235 @@
+/* === BASE === */
+body {
+    background: #1a1a1a;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0; 
+    margin: 0;  
+    min-height: 100vh;
+}
+
+.recap-container {
+    max-width: 580px; /* Élargi à 580px pour la très grosse police */
+    margin: 0 auto; 
+}
+
+.recap-container h1 {
+    color: #D81F2C;
+    font-size: 36px; /* Très grand */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    padding-top: 20px; 
+}
+
+/* === TICKET === */
+.ticket-caisse {
+    background: #f8f5f0;
+    color: #111;
+    padding: 0;
+    box-shadow: 
+        0 10px 40px rgba(0,0,0,0.6),
+        0 2px 8px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+/* Dents de scie haut */
+.ticket-caisse::before {
+    content: "";
+    display: block;
+    height: 16px;
+    background: 
+        radial-gradient(circle at 8px 0, #1a1a1a 8px, transparent 8px),
+        linear-gradient(#f8f5f0, #f8f5f0);
+    background-size: 16px 16px;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+
+/* Corps du ticket */
+.ticket-body {
+    padding: 10px 30px 20px;
+}
+
+/* Dents de scie bas */
+.ticket-bas {
+    height: 16px;
+    background: 
+        radial-gradient(circle at 8px 16px, #1a1a1a 8px, transparent 8px),
+        linear-gradient(#f8f5f0, #f8f5f0);
+    background-size: 16px 16px;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+
+/* === EN-TÊTE TICKET === */
+.ticket-caisse h2 {
+    font-size: 22px; /* Très grand */
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    margin-top: 0; 
+}
+
+.ticket-header-info {
+    text-align: center;
+    font-size: 15px; /* Très grand */
+    color: #444;
+    line-height: 1.7;
+    border-bottom: 1px dashed #aaa;
+    padding-bottom: 14px;
+    margin-bottom: 16px;
+}
+
+/* === TRAJET === */
+.ticket-trajet {
+    text-align: center;
+    margin-bottom: 16px;
+    border-bottom: 1px dashed #aaa;
+    padding-bottom: 14px;
+}
+
+.ticket-trajet-villes {
+    font-size: 22px; /* Très grand */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.ticket-trajet-detail {
+    font-size: 15px; /* Très grand */
+    color: #555;
+    letter-spacing: 0.5px;
+}
+
+/* === LIGNES DE DÉTAIL === */
+.ligne-detail,
+.ligne-total-intermediaire,
+.ligne-total-final {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 17px; /* Très grand */
+    padding: 6px 0;
+}
+
+.ligne-detail {
+    text-transform: uppercase;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.ligne-detail.reduc {
+    font-style: italic;
+    font-weight: bold;
+    color: #333;
+}
+
+.ligne-total-intermediaire {
+    font-weight: bold;
+    border-top: 1px dashed #aaa;
+    border-bottom: 1px dashed #aaa;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 19px; /* Très grand */
+}
+
+/* === ZONE POINTS === */
+.zone-points {
+    border: 1px dashed #888;
+    padding: 16px;
+    margin: 16px 0;
+    font-size: 16px; /* Très grand */
+    background: #fff;
+    line-height: 1.6;
+}
+
+.zone-points p {
+    margin: 0 0 12px 0;
+}
+
+.switch-points {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px; /* Très grand */
+    cursor: pointer;
+    margin: 0; 
+}
+
+.switch-points input[type="radio"],
+.switch-points input[type="checkbox"] {
+    margin: 0; 
+    width: 18px; /* Boutons encore plus gros */
+    height: 18px;
+    cursor: pointer;
+    accent-color: #D81F2C;
+}
+
+/* === TOTAL FINAL === */
+.ligne-total-final {
+    font-size: 28px; /* Très grand */
+    font-weight: 900;
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+    padding: 14px 0;
+    margin-top: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* === SÉPARATEUR PERFORÉ === */
+.ticket-separator {
+    border: none;
+    border-top: 2px dashed #bbb;
+    margin: 16px 0;
+}
+
+/* === PIED DU TICKET === */
+.ticket-footer {
+    text-align: center;
+    font-size: 15px; /* Très grand */
+    line-height: 1.8;
+    color: #555;
+    padding: 14px 0 4px;
+    border-top: 1px dashed #aaa;
+    margin-top: 16px;
+    letter-spacing: 1px;
+}
+
+.ticket-barcode {
+    font-size: 40px; /* Très grand */
+    letter-spacing: 2px;
+    color: #111;
+    margin-top: 8px;
+    font-family: 'Libre Barcode 39', 'Courier New', monospace;
+}
+
+/* === BOUTON === */
+.btn-payer {
+    display: block;
+    width: 100%;
+    background: #D81F2C;
+    color: #fff;
+    border: none;
+    padding: 20px; /* Bouton très imposant */
+    font-size: 20px; /* Très grand */
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 36px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-payer:hover {
+    background: #921520;
+}

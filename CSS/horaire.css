@@ -1,0 +1,151 @@
+/* ===== horaire.css ===== */
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 48px;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== BOUTON RETOUR ===== */
+.revenir {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    background: transparent;
+    border: 1.5px solid #D81F2C;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-bottom: 28px;
+}
+
+.revenir:hover {
+    background: rgba(216, 31, 44, 0.15);
+    color: #ffffff;
+}
+
+/* ===== TITRE ===== */
+main h1 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+main h1::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 24px;
+    background: #D81F2C;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+/* ===== TABLEAU HORAIRES ===== */
+.tabHoraire {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* ===== LIGNE D'ÉTAPE ===== */
+.tabHoraire tr {
+    border-bottom: 1px solid #2e2e2e;
+}
+
+.tabHoraire tr:last-child {
+    border-bottom: none;
+}
+
+/* ===== COLONNE NOM VILLE ===== */
+.tabHoraire td.col-ville {
+    background: #242424;
+    padding: 16px 20px;
+    width: 160px;
+    min-width: 160px;
+    vertical-align: middle;
+    border-right: 3px solid #D81F2C;
+}
+
+.tabHoraire td.col-ville h2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-left: 3px solid #D81F2C;
+    padding-left: 10px;
+    border-radius: 0;
+}
+
+.tabHoraire td.col-ville .terminus-label {
+    font-size: 11px;
+    color: #8D9195;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding-left: 13px;
+}
+
+/* ===== COLONNE HEURES ===== */
+.tabHoraire td.col-heures {
+    background: #1e1e1e;
+    padding: 16px 20px;
+    vertical-align: middle;
+}
+
+.heures-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+    overflow-x: auto;
+}
+
+/* ===== BADGE HEURE ===== */
+.heure {
+    display: inline-block;
+    background: #D81F2C;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    padding: 5px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}
+
+.heure.passe {
+    background: #3a3a3a;
+    color: #666666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    main {
+        padding: 24px 16px;
+    }
+
+    .tabHoraire td.col-ville {
+        width: 140px;
+        padding: 12px;
+    }
+
+    .tabHoraire td.col-heures {
+        padding: 12px;
+    }
+
+    .heure {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

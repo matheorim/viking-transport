@@ -1,0 +1,197 @@
+.profil-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* ---- Avatar ---- */
+.profil-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #D81F2C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+}
+
+/* ---- En-tête profil ---- */
+.profil-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+.profil-header-info h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 4px;
+}
+.profil-header-info span {
+    font-size: 13px;
+    color: #8D9195;
+}
+.badge-niveau {
+    display: inline-block;
+    background: rgba(216,31,44,0.15);
+    color: #D81F2C;
+    border: 1px solid #D81F2C;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 12px;
+    margin-top: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ---- Carte ---- */
+.profil-card {
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+}
+.profil-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #D81F2C;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    border-left: 3px solid #D81F2C;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* ---- Champs infos ---- */
+.profil-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+@media (max-width: 600px) {
+    .profil-grid { grid-template-columns: 1fr; }
+}
+.profil-field label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #8D9195;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+.profil-field p {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/* ---- Fidélité ---- */
+.fidelite-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+.fidelite-info span:first-child {
+    font-size: 28px;
+    font-weight: 900;
+    color: #fff;
+}
+.fidelite-info span:last-child {
+    font-size: 13px;
+    color: #8D9195;
+}
+.progress-bar {
+    background: #3a3a3a;
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #D81F2C, #ff4d5e);
+    border-radius: 10px;
+}
+.progress-label {
+    font-size: 12px;
+    color: #8D9195;
+}
+.progress-label strong {
+    color: #fff;
+}
+
+/* ---- Mot de passe ---- */
+.pwd-field {
+    margin-bottom: 16px;
+}
+.pwd-field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #8D9195;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+.pwd-field input {
+    width: 100%;
+    padding: 10px 14px;
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.pwd-field input:focus {
+    border-color: #D81F2C;
+}
+.pwd-field input::placeholder {
+    color: #4a4845;
+}
+
+/* ---- Boutons ---- */
+.profil-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+.btn-save {
+    background: #D81F2C;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: Arial, sans-serif;
+}
+.btn-save:hover { background: #921520; }
+
+.btn-logout {
+    background: transparent;
+    color: #8D9195;
+    border: 1px solid #3a3a3a;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: Arial, sans-serif;
+}
+.btn-logout:hover {
+    border-color: #D81F2C;
+    color: #D81F2C;
+}

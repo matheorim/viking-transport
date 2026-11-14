@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a1a1a;
+}
+
+.vt-header {
+    background: #343330;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+.vt-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.vt-logo img {
+    height: 62px;
+    width: auto;
+}
+
+.vt-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.vt-logo-text span:first-child {
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.vt-logo-text span:last-child {
+    font-size: 11px;
+    font-weight: 700;
+    color: #8D9195;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.vt-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vt-nav a {
+    color: #B5B8BA;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+    white-space: nowrap;
+}
+
+.vt-nav a:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.vt-divider {
+    width: 1px;
+    height: 22px;
+    background: #4a4845;
+    margin: 0 6px;
+}
+
+.vt-btn-reserver {
+    color: #ffffff !important;
+    background: transparent !important;
+    border: 1.5px solid #D81F2C;
+    border-radius: 6px !important;
+    padding: 8px 16px !important;
+}
+
+.vt-btn-reserver:hover {
+    background: rgba(216, 31, 44, 0.15) !important;
+    color: #ffffff !important;
+}
+
+.vt-btn-login {
+    background: #D81F2C !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    padding: 8px 18px !important;
+    font-weight: 700 !important;
+}
+
+.vt-btn-login:hover {
+    background: #921520 !important;
+    color: #ffffff !important;
+}
+
+main {
+    padding: 40px 32px;
+}
+
+.welcome-box {
+    background: #2a2a2a;
+    color: #ffffff;
+    padding: 32px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.welcome-box h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.welcome-box h4 {
+    font-size: 16px;
+    color: #D81F2C;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.welcome-box p {
+    color: #B5B8BA;
+    font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.vt-footer {
+  background: #343330;
+  border-top: 1px solid #4a4845;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.vt-footer-copy {
+  font-size: 13px;
+  color: #8D9195;
+}
+
+.vt-footer-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.vt-footer-links a {
+  font-size: 13px;
+  color: #8D9195;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.vt-footer-links a:hover {
+  color: #ffffff;
+}
+
+.vt-dot {
+  width: 3px;
+  height: 3px;
+  background: #4a4845;
+  border-radius: 50%;
+}
+
+.vt-footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.vt-footer-socials a {
+  color: #8D9195;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.vt-footer-socials a:hover {
+  color: #D81F2C;
+}
+
+body {
+    background: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
+    padding: 40px 32px;
+}
+
+.center {
+    display: block;
+    margin: 32px auto 0;
+    max-width: 100%;
+}
+
+.bouton_admin {
+    background: #D81F2C;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin: 8px 0 16px 0;
+}
+
+.bouton_admin:hover {
+    background: #921520;
+}
+
+.profile {
+  position: relative;
+  display: inline-block;
+}
+
+/* Icon button */
+.profile-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+}
+
+/* Dropdown */
+.menu {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 160px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: none;
+  overflow: hidden;
+}
+
+/* Menu items */
+.menu a, .menu p {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  background: #f2f2f2;
+}
+
+/* Show menu */
+.menu.show {
+  display: block;
+}
+
+/* --- Bloc 1 : Mettre l'image en fond --- */
+body {
+    /* Suppression de l'ancien fond uni */
+    /* background: #1a1a1a; */ 
+
+    /* Ajout du fond image */
+    background-image: url('../Pages/image_1.png'); /* Chemin à adapter selon votre structure */
+    background-size: cover;       /* L'image couvre tout l'écran sans se déformer */
+    background-position: center;  /* L'image est centrée */
+    background-attachment: fixed; /* Le fond reste fixe quand on scrolle */
+    background-repeat: no-repeat;
+    
+    /* Conserver ces propriétés déjà existantes */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Bloc 2 : Rendre la bulle transparente (mais pas trop) --- */
+
