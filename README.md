@@ -99,7 +99,7 @@ To run the project you would need to provide your own Oracle database (or adapt 
 
 ## Team
 
-Team project by group 4 (BUT Informatique, 2nd year): **Mathéo Rimbault** and the other members of the group (to be completed).
+This project was developed by Group 4, consisting of 8 second-year BUT Informatique students.
 
 ## Notes
 
